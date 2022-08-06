@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Bar</title>
+    <!-- the three things that jQuery Mobile needs to work -->
+    <link rel="stylesheet" href="../jquery.mobile-1.4.2/jquery.mobile-1.4.2.css" />
+    <script src="../jquery-1.11.0.js" type="text/javascript"></script>
+    <script src="../jquery.mobile-1.4.2/jquery.mobile-1.4.2.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+    <!-- This is the first page -->
+    <section id="firstpage" data-role="page">
+        <header data-role="header" data-position="fixed">
+          <h1>Header Bar</h1>
+          
+			<a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button">Back</a>
+
+        </header>
+        <div class="ui-content">
+            <h2>Page 1 show the weekly task items</h2>
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Filter" item="true">
+        	<li data-role="list-divider">Monday list items</li>
+            	<li><a href="#">Item 1</a></li>
+            	<li><a href="#">Item 2 </a></li>
+            	<li><a href="#">Item 3 </a></li>
+            <li data-role="list-divider">Tuesday list items</li>
+            	<li><a href="#">Item 1 </a></li>
+         		<li><a href="#">Item 2 </a></li>
+            	<li><a href="#">Item 3 </a></li>
+        </ul>
+        </div>
+        <footer data-role="footer" data-position="fixed">
+          <nav data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="#secondpage" class="ui-btn ui-icon-calendar ui-btn-icon-top ">Calendar</a></li>
+                <li><a href="#thirdpage" class="ui-btn ui-icon-clock ui-btn-icon-top">Time</a></li>
+            </ul>
+          </nav>
+          </footer>
+    </section>
+    
+    <!-- This is the second page -->
+    <section id="secondpage" data-role="page">
+        <header data-role="header" data-position="fixed">
+          <h1>Header Bar</h1>
+          <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button">Back</a>
+        </header>
+        <div class="ui-content">
+            <h2>Page 2 shows details about task items</h2>
+          <ul data-role="listview" data-inset="true">
+            <li data-role="list-divider">Monday, November 14</li>
+            <li><a href="#">
+                <h4>To Do Item 1</h4>
+                <p style="font-weight:bold">To do item 1 summary</p>
+                <p class="ui-li-aside">Due at 12pm</p>
+                <p>This is the detail text for ToDo Item 1</p>
+            </a></li>
+            <li><a href="#">
+                <h4>To Do Item 2</h4>
+                <p style="font-weight:bold">To do item 2 summary</p>
+                <p class="ui-li-aside">Due at 2pm</p>
+                <p>This is the detail text for ToDo Item 2</p>
+            </a></li>
+            <li data-role="list-divider">Tuesday, November 15</li>
+            <li><a href="#">
+                <h4>To Do Item 3</h4>
+                <p style="font-weight:bold">To do item 3 summary</p>
+                <p class="ui-li-aside">Due at 10:30am</p>
+                <p>This is the detail text for ToDo Item 3</p>
+            </a></li>
+            <li><a href="#">
+                <h4>To Do Item 4</h4>
+                <p style="font-weight:bold">To do item 4 summary</p>
+                <p>This is the detail text for ToDo Item 4</p>
+            </a></li>
+          </ul>
+        </div>
+        
+          <footer data-role="footer" data-position="fixed">
+          <nav data-role="navbar">
+            <ul>
+                <li><a href="#firstpage" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+                <li><a href="#" class="ui-btn ui-icon-calendar ui-btn-icon-top ui-btn-active ui-state-persist">Calendar</a></li>
+                <li><a href="#thirdpage" class="ui-btn ui-icon-clock ui-btn-icon-top">Time</a></li>
+            </ul>
+          </nav>
+          </footer>
+    </section>
+    
+        <!-- This is the third page -->
+        <section id="thirdpage" data-role="page">
+        <header data-role="header" data-position="fixed">
+          <h1>Header Bar</h1>
+          <a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button">Back</a>
+        </header>
+        <div class="ui-content">
+            <p>This is page 3 find information about the agenda</p>
+            <a href="#fourthpage" class="ui-btn">Dialogue</a>
+        </div>
+        
+          <footer data-role="footer" data-position="fixed">
+          <nav data-role="navbar">
+            <ul>
+                <li><a href="#firstpage" class="ui-btn ui-icon-home ui-btn-icon-top">Home</a></li>
+                <li><a href="#secondpage" class="ui-btn ui-icon-calendar ui-btn-icon-top ">Calendar</a></li>
+                <li><a href="#" class="ui-btn ui-icon-clock ui-btn-icon-top ui-btn-active ui-state-persist">Time</a></li>
+            </ul>
+          </nav>
+          </footer>
+    </section>
+    
+            <!-- This is the fourth page -->
+        <section id="fourthpage" data-role="page" data-dialog="true">
+        <header data-role="header" data-position="fixed">
+          <h1>Header Bar</h1>
+        </header>
+        <div class="ui-content">
+            <p>This is a pop up message</p>
+        </div>
+        
+          <footer data-role="footer" data-position="fixed">
+          </footer>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="Stylesheet" href="../CSS/main-style.css"> <!--Link to connect the css file-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- jQuery Mobile  -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="../JS/Product.js"></script>
+    <script type="text/javascript" src="../JS/Favourites.js"></script>
+    <script src="../JS/Main-js.js"></script>
+    
+    <title>Favourites</title>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
+        <div class="container">
+            <div class="flex-parent">
+                <div class="navbar-header">
+
+                    <a class="navbar-brand header-logo" href="../pages/Home.html" rel="external">
+                        <img src="../Images/LOGO.png" class="main-logo" alt="img">
+                    </a>
+                    <button class="header__button" id="btnNav" type="button">
+                        <img src="../Images/menu.png" class="main-logo" alt="img">
+                    </button>
+                </div>
+
+                <nav class="nav">
+                    <i class="bi bi-x-lg" id="close-icon" ></i>
+                    <ul class="nav__links">
+                        <li>
+                            <a href="../pages/Home.html" rel="external" class="nav__link">
+                                <img src="../Images/home-2.png" class="menu-icon" alt="img">
+                                <span class="nav-href">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pages/Products.html" rel="external" class="nav__link nav__link--active">
+                                <img src="../Images/dairy-products.png" class="menu-icon" alt="img">
+                                <span class="nav-href">Categories</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">
+                                <img src="../Images/qr-code.png" class="menu-icon" alt="img">
+                                <span class="nav-href">Scan QR</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">
+                                <img src="../Images/ranking.png" class="menu-icon" alt="img">
+                                <span class="nav-href">Leadboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">
+                                <img src="../Images/memory.png" class="menu-icon" alt="img">
+                                <span class="nav-href">Game</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav__link" href="#">
+                                <img src="../Images/contact.png" class="menu-icon" alt="img">
+                                <span class="nav-href">Contact Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav__overlay"></div>
+                </nav>
+
+            </div>
+        </div>
+    </nav><!-- /#site-header -->
+
+    <div class="container main-container">
+        <div class="welcome-section">
+            <div class="wc-left">
+                <div class="wc-heading">FAVOURITES</div>
+            </div>
+            <div class="wc-right">
+                <div class="get-started-btn">
+                    <button class="btn"><a href="#" id="enter-email">Email List</a></button>
+                </div>
+            </div>
+        </div>
+            <section class="products-section">
+                <div class="fd-products-wrap">
+                    <ul class="products card-area">
+                        
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+        <div id="enterEmailPopup">
+            <div class="popup-box">
+                <div class="pb-title">ENTER YOUR EMAIL</div>
+                <div class="pb-content">
+                    <form>
+                      <div class="form-group">
+                            <label >Email</label>
+                            <input type="email" class="form-control" name="mail" id="mail-to" value="" placeholder="Enter your email">
+                        </div>
+                    <div class="email-btn-wrap">
+                        <div class="get-started-btn clear-btn">
+                            <button class="btn" ><a href="../pages/Favourites.html" rel="external">Back</a></button>
+                        </div>
+                        <div class="get-started-btn">
+                            <button class="btn" ><a href="#" id="submit-mail">Send</a></button>
+                        </div> 
+                    </div>
+                </form>
+
+                </div>
+            </div>
+        </div>
+
+    <div class="footer-nav">
+        <div class="fn-wrap">
+            <div class="fn-item ">
+                <a href="../pages/Home.html" rel="external">
+                    <img src="../Images/home.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="../pages/Cart.html" rel="external">
+                    <img src="../Images/shopping-cart.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item current">
+                <a href="../pages/Favourites.html" rel="external">
+                    <img src="../Images/love.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="#" rel="external">
+                    <img src="../Images/user.png" alt="img">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-bottom">
+            <div class="container">
+                <div class="footer-b-wrap">
+                    <div class="ftb-left-col">
+                        <div class="ftbl-logo">
+                            <a href="/">
+                                <img src="../Images/logo-2.png" alt="img">
+                            </a>
+                        </div>
+                        <div class="ftbl-des">
+                            <p>KEEPING IT SIMPLE, Foodsco objective is to “Keep It Simple” by providing quality and fresh products.</p>
+                        </div>
+                    </div>
+                    <div class="ftb-right-col">
+                        <div class="ftbr-main-menu">
+                            <div class="ftbr-heading">Important Links</div>
+                            <ul id="menu-important-links-menu" class="foot-link-nav">
+                                <li id="menu-item-318" class="menu-item">
+                                    <a title="My account" href="/">My Account</a>
+                                </li>
+                                <li id="menu-item-317" class="menu-item ">
+                                    <a title="Contact Us" href="/">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ftbr-main-menu">
+                            <div class="ftbr-heading">Categories</div>
+                            <ul id="menu-account-menu" class="foot-link-nav">
+                                <li id="menu-item-76" class="menu-item">
+                                    <a title="Vegitables" href="/">Vegitables</a>
+                                </li>
+                                <li id="menu-item-77" class="menu-item">
+                                    <a title="Fruits" href="/">Fruits</a>
+                                </li>
+                                 <li id="menu-item-78" class="menu-item">
+                                    <a title="Meats" href="/">Meats</a>
+                                </li>
+                                 <li id="menu-item-79" class="menu-item">
+                                    <a title="Beverages" href="/">Beverages</a>
+                                </li>
+                                 <li id="menu-item-80" class="menu-item">
+                                    <a title="Grocery" href="/">Grocery</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ftbr-contact">
+                            <div class="ftbr-heading">Get in Touch</div>
+                            <div class="contact-group">
+                                <h4 class="cg-heading">
+                                    <span class="cg-h-icon">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </span>
+                                </h4>
+                                <p class="cg-text">
+                                    <a href="tel:+94 71 08903455">+94 71 08903455</a>
+                                </p>
+                            </div>
+                            <div class="contact-group">
+                                <h4 class="cg-heading">
+                                    <span class="cg-h-icon">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </span>
+                                </h4>
+                                <p class="cg-text">
+                                    <a href="mailto:medvouniforms@gmail.com">foodsco@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft-bottom">
+                <div class="container">
+                    <div class="ft-bottom-row">
+                        <div class="ft-copyright">
+                            <p class="copyright-note">Foodsco © 2021</p>
+                        </div>
+                        <div class="company-text">
+                        Project by foodsco</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+

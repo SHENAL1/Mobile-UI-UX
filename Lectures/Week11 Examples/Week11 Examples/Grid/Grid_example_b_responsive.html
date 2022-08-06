@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	 
+	<style>
+	
+	.ui-grid-b > .ui-block-span2 {
+		  width: 66.6666%;
+		}
+
+	
+	/* iPad landscape */
+		@media (orientation: landscape){
+		.ui-bar-a{
+			height: 620px;
+			background-color: lightblue;
+			}
+		}
+	
+	/* iPhone landscape */	
+		@media (orientation: landscape) and (max-device-width : 667px){
+		.ui-bar-a{
+			height: 230px;
+			background-color: lightblue;
+			}
+		}
+	
+	/* iPad portrait */	
+		@media (orientation: portrait) and (max-device-width : 768px){
+		.ui-bar-a{
+			height: 880px;
+			background-color: lightgreen;
+			}
+		}
+	
+	/* iPhone portrait */		
+		@media (orientation: portrait) and (max-device-width : 375px){
+		.ui-bar-a{
+			height: 520px;
+			background-color: lightgreen;
+			}
+		}
+
+	</style>
+	
+</head>
+<body>
+    <!-- This is the first page -->
+    <section id="firstpage" data-role="page">
+        <header data-role="header" data-position="fixed">
+          <h1>Header Bar</h1>
+          
+			<a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all"  data-role="button">Back</a>
+
+        </header>
+		
+        <div class="ui-content">
+			<div class="ui-grid-b">
+				<div class="ui-block-a">
+					<div class="ui-bar ui-bar-a">
+					Block A
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Filter" item="true">
+					<li data-role="list-divider">Monday list items</li>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2 </a></li>
+					<li><a href="#">Item 3 </a></li>
+					<li data-role="list-divider">Tuesday list items</li>
+					<li><a href="#">Item 1 </a></li>
+					<li><a href="#">Item 2 </a></li>
+					<li><a href="#">Item 3 </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ui-block-b ui-block-span2"><div class="ui-bar ui-bar-a">
+				Block B<br>
+				Block B<br>
+				Block B<br>
+				Block B<br>
+				Block B<br>
+			</div>
+			</div>
+
+		</div><!-- /grid-c -->
+		
+		</div><!-- /rwd-example -->
+
+        <footer data-role="footer" data-position="fixed">
+          <nav data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="#secondpage" class="ui-btn ui-icon-calendar ui-btn-icon-top ">Calendar</a></li>
+                <li><a href="#thirdpage" class="ui-btn ui-icon-clock ui-btn-icon-top">Time</a></li>
+            </ul>
+          </nav>
+          </footer>
+    </section>
+    
+
+    
+</body>
+</html>

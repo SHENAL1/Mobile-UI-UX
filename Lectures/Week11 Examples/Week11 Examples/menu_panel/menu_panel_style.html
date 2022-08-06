@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+	<style>
+	
+		#menu{
+		background-color: rgba(255,0,0,0.5);
+		}
+		
+		#menu li {
+		opacity: 0.8;
+		}
+	</style>
+	 
+</head>
+
+<body>
+<!-- This is page home-->
+	<div data-role="page" id="home">
+	
+		<div data-role="panel" data-position="left" data-display="overlay" data-theme="b" id="menu"> <!-- /menu panel left-->
+			<ul data-role="listview">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#calendar">Calendar</a></li>
+			<li><a href="#calendar">Time</a></li>
+			<br>
+			<br>
+			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+			</ul>
+		</div><!-- /panel left-->
+		
+		<div data-role="panel" data-position="right" data-display="reveal" data-theme="a" id="filter"> <!-- /filter panel right-->
+			<p> Here you put content you would like to display in this panel</p>
+			<a href="#" data-rel="close">Close filter panel</a>
+	    </div><!-- /panel right-->
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Header Bar</h1>
+			
+			<a href="#menu" data-icon="bars" data-iconpos="notext">Menu</a>
+			<a href="#filter" data-icon="eye" data-iconpos="notext">Filter</a>
+			
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+					<li><a href="#calendar" class="ui-btn ui-icon-calendar ui-btn-icon-top">Calendar</a></li>
+					<li><a href="#" class="ui-btn ui-icon-clock ui-btn-icon-top">Time</a></li>
+					<li><a href="#" class="ui-btn ui-icon-phone ui-btn-icon-top">Calls</a></li>
+				</ul>
+			</nav>
+		</div>	
+			
+	
+		<div role="main" class="ui-content">
+			<p> This is Home page content area. This is where you add code to populate the page with content.</p>
+		</div>
+		<!-- /content -->
+	
+
+		<div data-role="footer" data-position="fixed">
+			<a href="#" class="ui-btn">Button 1</a>
+			<a href="#" class="ui-btn">Button 2</a>
+			<a href="#" class="ui-btn-right">Button 3</a>
+		</div>
+
+	</div>
+
+
+<!-- This is page calendar-->
+	<div data-role="page" id="calendar">
+	
+		<div data-role="panel" data-position="left" data-display="overlay" data-theme="b" id="menu"> <!-- /menu panel left-->
+			<ul data-role="listview">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#calendar">Calendar</a></li>
+			<li><a href="#calendar">Time</a></li>
+			<br>
+			<br>
+			<li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+			</ul>
+		</div><!-- /panel left-->
+		
+		<div data-role="panel" data-position="right" data-display="reveal" data-theme="a" data-dismissible="false" data-animate="false" id="filter"> <!-- /filter panel right-->
+			<p> Here you put content you would like to display in this panel</p>
+			<a href="#" data-rel="close">Close filter panel</a>
+			
+
+			
+			
+			
+	    </div><!-- /panel right-->
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Header Bar</h1>
+			
+			<a href="#menu" data-icon="bars" data-iconpos="notext">Menu</a>
+			<a href="#filter" data-icon="eye" data-iconpos="notext">Filter</a>
+			
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top ui-btn-active ui-state-persist">Home</a></li>
+					<li><a href="#calendar" class="ui-btn ui-icon-calendar ui-btn-icon-top">Calendar</a></li>
+					<li><a href="#" class="ui-btn ui-icon-clock ui-btn-icon-top">Time</a></li>
+					<li><a href="#" class="ui-btn ui-icon-phone ui-btn-icon-top">Calls</a></li>
+				</ul>
+			</nav>
+		</div>	
+			
+	
+		<div role="main" class="ui-content">
+			<p> This is Calendar page content area. This is where you add code to populate the page with content.</p>
+		</div>
+		<!-- /content -->
+	
+
+		<div data-role="footer" data-position="fixed">
+			<a href="#" class="ui-btn">Button 1</a>
+			<a href="#" class="ui-btn">Button 2</a>
+			<a href="#" class="ui-btn-right">Button 3</a>
+		</div>
+
+	</div>
+	
+	
+
+	
+</body>
+</html>

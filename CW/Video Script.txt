@@ -1,0 +1,60 @@
+LANDING PAGE 
+we chose concept 3 for the cw 
+Our Online store is Foodsco 
+
+After we login we go straight to the front page 
+-----------Home Page----------
+We have the the daily deals an the catergories avilable 
+we can navigate to the caergory page 
+
+-----------Select Filter---------
+We have the filter option as well as the sorting option to sort and filter the products
+
+
+----------Select a product--------
+We can select a item to see more details of that products
+
+we can see the product details the price and we can also add the item to the favourite list 
+
+
+when we go down we can see the ratings and the comments that are posted and we can give rating, add comment and reply to comment also
+
+---------use navigation to navigate
+we can navigate to the home page, the cart. the favourite list and to the profile using the navigation bar
+
+--------------use menu to navigate
+we can also navigate to pages uing the hamburger menu.
+
+--------------go to cart
+if we go to the cart we can see all the items we added to the cart the total price and if we go to checkout we would have to fill the order details and move on to proceed to paymet process select a payment method then login to pay pal enter card details the the order confirmation would pop up then system asking for the feedback from the user
+
+
+-----------------go to QR Page
+if we select the scan qr button this will open up the camera and scan the qr code and would let the user to view the product or share the qr 
+
+here the user would enter the email address and a confirmation box would pop up 
+
+--------open up favourite page
+the user have the option to email the favorite list.
+here user can remove an item from the favourite list the confirmation box will pop up asking to confirm   
+
+----------go to game page-----
+
+the gamification part here we can vist the leaderboard and how to play would show how to play the game and how the points are given
+
+when we go to play the game user would get 3 chances to flip cards  and end of it the game the user would get a certiain discount with a promo code with it the user can reedem it in the next order 
+
+---------Open contact us page-------------
+
+The contact us page have the address the email and the contact no, along with the map of the store location 
+
+At the bottom user can give feedback of the system 
+
+-------------open profile-----------------
+
+the profile of the user the settings user can chnge the user details, the address of the user 
+
+finally when you log out will be redirect to the landing page.
+
+
+this was our intaractive prototype thank you for watching

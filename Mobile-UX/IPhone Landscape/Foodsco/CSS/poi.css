@@ -1,0 +1,42 @@
+.lemon{
+    width: 700px; 
+    height: 500px;
+    /* background-color: #fff; */
+    margin: 0 15px 15px 0;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 150px;
+    
+    /* padding: 5px; */
+    /* max-width: 1024px; */
+
+}
+.back-button{
+    margin-top: 150px;
+    width: 50px;
+    height: 50px;
+}
+.cart-button{
+    width: 200px;
+    margin-left: 600px;
+    margin-top: -50px;
+   
+}
+.ProductDescription{
+    /* width: 800px; */
+}
+.ProductType{
+    width: 100px;
+}
+.ProductTypeDes{
+    width: 300px;
+}
+.PriceContainer{
+    width: 200px;
+}
+.purchase{
+    background-color: aquamarine;
+}

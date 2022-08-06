@@ -1,0 +1,91 @@
+.main-logo{
+    max-width: 200px;
+}
+.navbar{
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    position: fixed!important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+/* hamburger icon */
+.ham-icon-wrp {
+    position: relative;
+    display: inline-block;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.ham-icon-wrp {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.navbar-brand-wrp {
+    display: inline-block;
+}
+.flex-parent{
+    padding: 10px 0;
+}
+/* side navigation bar */
+.sidenav {
+    height: 100%;
+    width: 60%;
+    display: none;
+    background-color: #5DC466;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 1111;
+    overflow: scroll;
+}
+.sidenav .menu-icon {
+    height: 25px;
+    width: 25px;
+}
+.sidenav .menu-icon-position {
+    width: 45%;
+    padding-top: 20px;
+    text-align: center
+}
+.sidenav .menu-font {
+    font-size: 14px
+}
+
+.sidenav .menu-font-position {
+    width: 55%;
+    padding-top: 25px;
+}
+.sidenav a {
+
+    text-decoration: none;
+    font-weight: 700;
+    color: white!important;
+    /*transition: 0.3s;*/
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.menu-btn{
+    border-bottom: 1px solid #ffffff;
+}
+
+img.close-icon {
+    float: right;
+}
+ 
+/* fix navigation  */
+.fn-wrap{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+    width: 100%;
+}

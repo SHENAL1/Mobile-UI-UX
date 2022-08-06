@@ -1,0 +1,21 @@
+.qr_msg {
+  display: inline-block;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 100%;
+  padding: 0px 5px;
+  border: 2px solid rgb(10, 10, 10);
+  border-radius: 12px;
+  /* padding: 5px; */
+  margin-top: 14px;
+}
+.result{
+    background-color: green;
+    color:#fff;
+    padding:6px;
+  }
+  .row{
+    display:flex;
+  }
+
+  

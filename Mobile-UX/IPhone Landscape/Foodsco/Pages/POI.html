@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <link rel="Stylesheet" href="../CSS/navigationbar.css"> 
+    <link rel="Stylesheet" href="../CSS/main-style.css">  -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="Stylesheet" href="../CSS/navigationbar.css">  -->
+    <link rel="Stylesheet" href="../CSS/main-style.css"> 
+    <link rel="Stylesheet" href="../CSS/navigationbar.css">
+    <!-- Bootstrap  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../JS/Main-js.js"></script>
+    <script src="../JS/menu.js"></script>
+    
+    <!-- jQuery library -->
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../JS/products.js"></script>
+    <script src="../JS/POIComment.js"></script>
+    <!-- js -->
+
+    <title>POI page</title>
+</head>
+<body>
+<div data-role="page" id="pageone">
+
+    <div data-role="header">
+        <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
+            <div class="container">
+                <div class="flex-parent">
+                    <div class="navbar-header">
+                        <div class="navbar-brand-wrp">
+                            <a class="navbar-brand header-logo" href="#">
+                                <img src="../Images/LOGO.png" class="main-logo" alt="img">
+                            </a>
+                        </div>
+                        
+                        <div class="ham-icon-wrp">
+                            <a class="ham-icon" href="#">
+                                <img src="../Images/menu.png" class="main-logo" alt="img">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div><!-- /header -->
+    <div id="mySidenav" class="sidenav">
+        <span class="sidemenu-close"><img class="close-icon" src="../Images/close.png" alt="icon"></span>
+
+        <div class="ui-grid-a container">  
+
+                <div class="menu-btn">
+                    <a href="./Home.html" rel="external">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/home 2.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Home</span>
+                    </div>
+                </a>
+                </div>           
+                <div class="menu-btn">
+                    <a href="./Products.html" rel="external">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/dairy-products.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Categories</span>
+                    </div>
+                </a>
+                </div>
+            
+            
+                <div class="menu-btn">
+                    <a href="./QRPage.html" rel="external">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/qr-code.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Scan QR</span>
+                    </div>
+                </a>
+                </div>
+            
+            
+                <div class="menu-btn">
+                    <a href="#">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/ranking.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Leadboard</span>
+                    </div>
+                </a>
+                </div>                      
+                <div class="menu-btn">
+                    <a href="#">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/memory.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Game</span>
+                    </div>
+                </a>
+                </div>          
+                <div class="menu-btn">
+                    <a href="./ContactUs.html" rel="external">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/contact.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Contact Us</span>
+                    </div>
+                </a>
+                </div> 
+                <div class="menu-btn">
+                    <div class="ui-block-a menu-icon-position">
+                        <!-- <img class="menu-icon" src="../Images/contact.png" alt="icon"> -->
+                    </div>
+                    <div class="ui-block-b menu-font-position" id="logOut">
+                        <span class="menu-font" style="color: white !important;">Log Out</span>
+                    </div>
+                </div>             
+        </div>
+    </div>
+   
+    <div role="main" class="ui-content">
+        <div class="main-container single-product-container">
+            <div class="spc-img">
+                <div class="spc-circle"></div>
+                <img src="../Images/lemon2.png" alt="img">
+            </div>
+            <div class="container">
+            <div class="sp-sec-1">
+                <div class="sps-left">
+                    <div class="sp-name">Lemon</div>
+                    <div class="sp-category">Fruit</div>
+                    <ul class="sp-rating">
+                        <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        <li class="sp-star"><i class="bi bi-star-fill"></i></li>
+                    </ul>
+                </div>
+    
+                <div class="sps-right">
+                    <div class="sp-quantity">
+                        <div class="spq-minus">-</div>
+                        <div class="spq-num">1</div>
+                        <div class="spq-plus">+</div>
+                    </div>
+    
+                    <div class="sp-favorite">
+                        <div class="spf-text">Add to wishlist</div>
+                        <img src="../Images/love.png" alt="img">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="sp-sec">
+                <div class="sp-heading">Description</div>
+                <p>The lemon (Citrus limon) is a species of small evergreen tree in the flowering plant family Rutaceae, native to Asia, primarily Northeast India (Assam), Northern Myanmar or China</p>
+            </div>
+    
+            <div class="cart-total-box">
+                <div class="ctb-price-wrap">
+                    <div class="ctb-price-text">Price</div>
+                    <div class="ctb-price">LKR 180.00</div>
+                </div>
+    
+                <div class="btn-wrap">
+                    <div class="get-started-btn">
+                        <button class="btn"><a href="#" >Add to cart</a></button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="sp-sec">
+                <div class="sp-heading">Ratings <span>Tap to rate</span></div>
+                <div class="rate-box">
+                    <div class="rb-row">
+                        <ul class="sp-rating">
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                        <div class="rated-user">
+                            <div class="ru-week">2w ago</div>
+                            <div class="ru-name">Robert</div>
+                        </div>
+                    </div>
+                    <div class="rb-row">
+                        <ul class="sp-rating">
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                        <div class="rated-user">
+                            <div class="ru-week">5w ago</div>
+                            <div class="ru-name">Thomas</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!-- //comment section -->
+            <div class="sp-sec">
+                <div class="ui-content" style="padding: 5px;background: #E9F5E8;box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);border-radius: 5px;">
+                    <span class="ui-grid-solo">
+                        <span class="ui-block-a">
+                            <span class="foodsco_title_" style="color: black ;font-weight: 700 ">Customer Reviews</span><br/><br/>
+                        </span>
+                    </span>
+                    <span class="ui-grid-a">
+                        <span class="ui-block-a" style="width: 35%" >
+                            <span class="foodsco_title_" style="color: black ;font-weight: 700 " id="reviewsCount"></span><br/><br/>
+                        </span>
+                        <span class="ui-block-b" style="width: 60%; ">
+                            <button id="show-form-btn" 
+                             style="width:120px;float:right;color: #fff;border: 1px solid;
+                             font-size: 12px;font-weight: 400;margin: 5px;padding: 8px 7px 8px 7px;background-color: #5DC466;">
+                             Tap to comments</button>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="ui-content" style="background-color: white;padding-bottom: 0;">
+            <span class="ui-grid-solo">
+                <span class="ui-block-a">
+                    <span class="foodsco_title_" style="color: black ;font-weight: 700 ">Customer Reviews</span><br/><br/>
+                </span>
+            </span>
+            <span class="ui-grid-a">
+                <span class="ui-block-a" style="width: 35%" >
+                    <span class="foodsco_title_" style="color: black ;font-weight: 700 " id="reviewsCount"></span><br/><br/>
+                </span>
+                <span class="ui-block-b" style="width: 60%; ">
+                    <button id="show-form-btn"  style="width:120px;float:right;color: #fff;border: 1px solid;font-size: 12px;font-weight: 400;margin: 5px;padding: 8px 7px 8px 7px;background-color: #5DC466;">Tap to comments</button>
+                </span>
+            </span>
+        </div> -->
+
+        <div class="ui-content" id="review-form" style="display: none; padding: 10px;background: #E9F5E8;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);border-radius: 5px;margin-left: 15px;margin-right: 15px;">
+            <div id="comment-form" >
+                <span class="foodsco_subtitle_" style="color: black ; font-weight: 700;display: none" >Username:</span>
+                <input type="text" name="name" id="name" value="" style="display: none">
+
+                <span class="foodsco_subtitle_" style="color: black ; font-weight: 700;margin-left:5px">Title:</span>
+                <input type="text" name="handle" id="handle"
+                    value="Review title" placeholder="Review title" style="background-color: white !important; ">
+
+                <span class="foodsco_subtitle_" style="color: black ; font-weight: 700;margin-left:5px">Review:</span>
+                <textarea rows="3" style="background-color: white !important;" id="comment" class="comment-box"
+                 placeholder="Body of review(1500)">Please write your comment</textarea>
+
+                <span class="ui-grid-solo" >
+                    <span class="ui-block-a">
+                        <span style="display: flex;float:right" >
+                            <button id="hide-form-btn" class="cancel-btn" onclick="close_reply_form(${abc})"
+                             style=" width:65px; padding: 8px 8px 8px 8px;color: #5DC466;background-color: white;
+                             border: 1px solid #5DC466;font-weight: 400;margin-right: 10px ;font-size: 12px;">Cancel</button>
+                            <button id="add-comment" class="add-btn" style="width:65px; color: white;
+                            background-color: #5DC466;border: 1px solid #5DC466;font-size: 12px;
+                            font-weight: 400;margin: 5px;padding: 8px 7px 8px 7px;">Submit</button>
+                        </span>
+                    </span>
+                </span>
+
+            </div>
+
+        </div>
+        <div class="ui-content" style="background-color: #F6F8FA;margin-top: 5px;">
+            <ul id="commentsList" style="padding-inline-start:10px; padding-inline-end: 10px; background-color: #F6F8FA;"></ul>
+        </div>
+    
+        </div>
+
+    <!--  Comment section START  -->
+
+
+
+    <!--  Comment section END  -->
+    </div> 
+
+   
+
+    <div data-role="footer">
+        <footer>
+            <div id="footer-bottom">
+                <div class="container">
+                    <div class="footer-b-wrap">
+                        <div class="ftb-left-col">
+                            <div class="ftbl-logo">
+                                <a href="/">
+                                    <img src="../Images/logo-2.png" alt="img">
+                                </a>
+                            </div>
+                            <div class="ftbl-des">
+                                <p>KEEPING IT SIMPLE, Foodsco objective is to “Keep It Simple” by providing quality and fresh products.</p>
+                            </div>
+                        </div>
+                        <div class="ftb-right-col">
+                            <div class="ftbr-main-menu">
+                                <div class="ftbr-heading">Important Links</div>
+                                <ul id="menu-important-links-menu" class="foot-link-nav">
+                                    <li id="menu-item-318" class="menu-item">
+                                        <a title="My account" href="/">My Account</a>
+                                    </li>
+                                    <li id="menu-item-317" class="menu-item ">
+                                        <a title="Contact Us" href="/">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ftbr-main-menu">
+                                <div class="ftbr-heading">Categories</div>
+                                <ul id="menu-account-menu" class="foot-link-nav">
+                                    <li id="menu-item-76" class="menu-item">
+                                        <a title="Vegitables" href="/">Vegitables</a>
+                                    </li>
+                                    <li id="menu-item-77" class="menu-item">
+                                        <a title="Fruits" href="/">Fruits</a>
+                                    </li>
+                                    <li id="menu-item-78" class="menu-item">
+                                        <a title="Meats" href="/">Meats</a>
+                                    </li>
+                                    <li id="menu-item-79" class="menu-item">
+                                        <a title="Beverages" href="/">Beverages</a>
+                                    </li>
+                                    <li id="menu-item-80" class="menu-item">
+                                        <a title="Grocery" href="/">Grocery</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ftbr-contact">
+                                <div class="ftbr-heading">Get in Touch</div>
+                                <div class="contact-group">
+                                    <h4 class="cg-heading">
+                                        <span class="cg-h-icon">
+                                            <i class="bi bi-telephone-fill"></i>
+                                        </span>
+                                    </h4>
+                                    <p class="cg-text">
+                                        <a href="tel:+94 71 08903455">+94 71 08903455</a>
+                                    </p>
+                                </div>
+                                <div class="contact-group">
+                                    <h4 class="cg-heading">
+                                        <span class="cg-h-icon">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </span>
+                                    </h4>
+                                    <p class="cg-text">
+                                        <a href="mailto:medvouniforms@gmail.com">foodsco@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ft-bottom">
+                    <div class="container">
+                        <div class="ft-bottom-row">
+                            <div class="ft-copyright">
+                                <p class="copyright-note">Foodsco © 2021</p>
+                            </div>
+                            <div class="company-text">
+                            Project by foodsco</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div><!-- /footer -->
+    
+<!-- bottom fixed navigation  -->
+    <div class="footer-nav">
+        <div class="fn-wrap">
+            <div class="fn-item">
+                <a href="./Home.html">
+                    <img src="../Images/home.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="../pages/Cart.html">
+                    <img src="../Images/shopping-cart.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="../pages/Favourites.html">
+                    <img src="../Images/love.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="#">
+                    <img src="../Images/user.png" alt="img">
+                </a>
+            </div>
+        </div>
+    </div>
+</div><!-- /page -->
+</body>
+</html>

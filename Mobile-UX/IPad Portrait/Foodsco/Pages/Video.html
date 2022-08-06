@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+   <title>iframe Video</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      
+      <script>
+         function initMap(){
+    //The location of Uluru
+         var uluru = {lat : -25.344, lng: 131.036};
+    //The map, centered at Uluru
+         var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 4, center:uluru});
+
+         var marker = new google.maps.Marker({position: uluru, map: map});
+    
+      }
+      </script>
+   </head>
+   
+   <body>
+      <div data-role = "page">
+         <div></div>
+      </div>
+   </body>
+</html>
+

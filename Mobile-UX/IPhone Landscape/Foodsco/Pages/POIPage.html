@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POI Page</title>
+    
+    <!-- jQuery library -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="Stylesheet" href="../CSS/main-style.css"> 
+    <!-- js -->
+    <script src="../JS/products.js"></script>
+    <script src="../JS/product_comment.js"></script>
+
+</head>
+<body>
+<div data-role="page" id="product">
+
+    <div data-role="header">
+        <div data-role="header">
+            <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
+                <div class="container">
+                    <div class="flex-parent">
+                        <div class="navbar-header">
+
+                            <a class="navbar-brand header-logo" href="#">
+                                <img src="../Images/LOGO.png" class="main-logo" alt="img">
+                            </a>
+                            <a class="ham-icon" href="#">
+                                <img src="../Images/menu.png" class="main-logo" alt="img">
+                            </a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="main-navbar">
+
+                        </div>
+
+                    </div>
+                </div>
+            </nav><!-- /#site-header -->
+        </div>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <div class="main-container single-product-container">
+            <div class="spc-img">
+                <div class="spc-circle"></div>
+                <img src="../Images/lemon-large.png" alt="img">
+            </div>
+            <div class="container">
+            <div class="sp-sec-1">
+                <div class="sps-left">
+                    <div class="sp-name">Lemon</div>
+                    <div class="sp-category">Fruit</div>
+                    <ul class="sp-rating">
+                        <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        <li class="sp-star"><i class="bi bi-star-fill"></i></li>
+                    </ul>
+                </div>
+    
+                <div class="sps-right">
+                    <div class="sp-quantity">
+                        <div class="spq-minus">-</div>
+                        <div class="spq-num">1</div>
+                        <div class="spq-plus">+</div>
+                    </div>
+    
+                    <div class="sp-favorite">
+                        <div class="spf-text">Add to wishlist</div>
+                        <img src="../Images/love.png" alt="img">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="sp-sec">
+                <div class="sp-heading">Description</div>
+                <p>The lemon (Citrus limon) is a species of small evergreen tree in the flowering plant family Rutaceae, native to Asia, primarily Northeast India (Assam), Northern Myanmar or China</p>
+            </div>
+    
+            <div class="cart-total-box">
+                <div class="ctb-price-wrap">
+                    <div class="ctb-price-text">Price</div>
+                    <div class="ctb-price">LKR 180.00</div>
+                </div>
+    
+                <div class="btn-wrap">
+                    <div class="get-started-btn">
+                        <button class="btn"><a href="#" >Add to cart</a></button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="sp-sec">
+                <div class="sp-heading">Ratings <span>Tap to rate</span></div>
+                <div class="rate-box">
+                    <div class="rb-row">
+                        <ul class="sp-rating">
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                        <div class="rated-user">
+                            <div class="ru-week">2w ago</div>
+                            <div class="ru-name">Robert</div>
+                        </div>
+                    </div>
+                    <div class="rb-row">
+                        <ul class="sp-rating">
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                            <li class="sp-star fill"><i class="bi bi-star-fill"></i></li>
+                        </ul>
+                        <div class="rated-user">
+                            <div class="ru-week">5w ago</div>
+                            <div class="ru-name">Thomas</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+    
+            <div class="sp-sec">
+                <div class="sp-heading">Comments <span>Tap to comment</span></div>
+                    <!--  Comment section START  -->
+
+    <div class="ui-content" style="background-color: #EBEBEB;padding-bottom: 0;">
+		<span class="ui-grid-solo">
+			<span class="ui-block-a">
+				<span class="foodsco_title_" style="color: black ;font-weight: 700 ">Customer Reviews</span><br/><br/>
+            </span>
+        </span>
+        <span class="ui-grid-a">
+            <span class="ui-block-a" style="width: 40%" >
+                <span class="foodsco_title_" style="color: black ;font-weight: 700 " id="reviewsCount"></span><br/><br/>
+            </span>
+			<span class="ui-block-b" style="width: 60%; ">
+                <button id="show-form-btn"  style="width:120px;float:right;color: #fff;border: 1px solid;font-size: 12px;font-weight: 400;margin: 5px;padding: 8px 7px 8px 7px;background-color: #5DC466;">Tap to comments</button>
+            </span>
+        </span>
+    </div>
+<!--    <div class="ui-content">-->
+
+<!--    </div>-->
+    <div class="ui-content" id="review-form" style="display: none; background-color: #EBEBEB">
+        <div id="comment-form" >
+            <span class="foodsco_subtitle_" style="color: black ; font-weight: 700;display: none" >Username:</span>
+            <input type="text" name="name" id="name" value="" style="display: none">
+
+            <span class="foodsco_subtitle_" style="color: black ; font-weight: 700;margin-left:5px">Title:</span>
+            <input type="text" name="handle" id="handle"
+                   value="Review title" placeholder="Review title">
+
+            <span class="foodsco_subtitle_" style="color: black ; font-weight: 700;margin-left:5px">Review:</span>
+            <textarea rows="5" id="comment" class="comment-box" placeholder="Body of review(1500)">Please write your comment</textarea>
+
+            <span class="ui-grid-solo" >
+                <span class="ui-block-a">
+                    <span style="display: flex;float:right" >
+                        <button id="hide-form-btn" class="cancel-btn" onclick="close_reply_form(${abc})" style=" width:65px; padding: 8px 8px 8px 8px;color: #3F007A;background-color: white;border: 1px solid #3F007A;font-weight: 400;margin-right: 10px ;font-size: 12px;">Cancel</button>
+                        <button id="add-comment" class="add-btn" style="width:65px; color: white;background-color: #5DC466;border: 1px solid #3F007A;font-size: 12px;font-weight: 400;margin: 5px;padding: 8px 7px 8px 7px;">Submit</button>
+                    </span>
+                </span>
+            </span>
+
+        </div>
+
+    </div>
+    <div class="ui-content" style="background-color: #EBEBEB;">
+        <ul id="commentsList" style="padding-inline-start:10px; padding-inline-end: 10px; background-color: #EBEBEB;"></ul>
+    </div>
+                
+            </div>
+        </div>
+    
+    
+        </div>
+
+
+
+    <!--  Comment section END  -->
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+</body>
+</html>

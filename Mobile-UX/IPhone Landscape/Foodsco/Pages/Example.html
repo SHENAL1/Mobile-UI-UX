@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="Stylesheet" href="../CSS/navigationbar.css"> <!--Link to connect the css file-->
+
+    <!-- jQuery library -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- js -->
+    <script src="../JS/menu.js"></script>
+
+    <title>navigation bar</title>
+</head>
+<body>
+<div data-role="page">
+
+    <div data-role="header">
+        <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
+            <div class="container">
+                <div class="flex-parent">
+                    <div class="navbar-header">
+                        <div class="navbar-brand-wrp">
+                            <a class="navbar-brand header-logo" href="#">
+                                <img src="../Images/LOGO.png" class="main-logo" alt="img">
+                            </a>
+                        </div>
+                        
+                        <div class="ham-icon-wrp">
+                            <a class="ham-icon" href="#">
+                                <img src="../Images/menu.png" class="main-logo" alt="img">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div><!-- /header -->
+    <div id="mySidenav" class="sidenav">
+        <span class="sidemenu-close"><img class="close-icon" src="../Images/close.png" alt="icon"></span>
+
+        <div class="ui-grid-a container">  
+
+                <div class="menu-btn">
+                    <a href="#">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/home 2.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Home</span>
+                    </div>
+                </a>
+                </div>           
+                <div class="menu-btn">
+                    <a href="#">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/dairy-products.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Categories</span>
+                    </div>
+                </a>
+                </div>
+            
+            
+                <div class="menu-btn">
+                    <a href="#">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/qr-code.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Scan QR</span>
+                    </div>
+                </a>
+                </div>
+            
+            
+                <div class="menu-btn">
+                    <a href="#">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/ranking.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Leadboard</span>
+                    </div>
+                </a>
+                </div>                      
+                <div class="menu-btn">
+                    <a href="#">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/memory.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Game</span>
+                    </div>
+                </a>
+                </div>          
+                <div class="menu-btn">
+                    <a href="#">
+                    <div class="ui-block-a menu-icon-position">
+                        <img class="menu-icon" src="../Images/contact.png" alt="icon">
+                    </div>
+                    <div class="ui-block-b menu-font-position">
+                        <span class="menu-font">Contact Us</span>
+                    </div>
+                </a>
+                </div>           
+        </div>
+    </div>
+    <div role="main" class="ui-content">
+       <div style="height:600px;background-color: blue;"></div>
+
+    </div><!-- /content -->
+
+   
+
+    <div data-role="footer">
+        <h4>Page Footer</h4>
+    </div><!-- /footer -->
+    
+<!-- bottom fixed navigation  -->
+    <div class="footer-nav">
+        <div class="fn-wrap">
+            <div class="fn-item current">
+                <a href="#">
+                    <img src="../Images/home.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="../pages/Cart.html">
+                    <img src="../Images/shopping-cart.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="../pages/Favourites.html">
+                    <img src="../Images/love.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="#">
+                    <img src="../Images/user.png" alt="img">
+                </a>
+            </div>
+        </div>
+    </div>
+</div><!-- /page -->
+</body>
+</html>

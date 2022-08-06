@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>FOODSCO </title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="Stylesheet" href="../CSS/main-style.css">
+    <!--Link to connect the css file-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- INCLUDING JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- Including the Js File -->
+    <script src="../JS/Main-JS.js"></script>
+
+
+    <!-- Jquery files for the filter and sort -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+
+    <style>
+        .filter-price {
+            width: 80%;
+            margin-right: 50px;
+        }
+
+        div.ui-slider {
+            height: 10px;
+        }
+
+        .ui-slider-range {
+            border: 5px solid #5DC466;
+            background-color: #5DC466;
+            height: 10px;
+        }
+
+        .ui-slider-handle {
+            background-color: #5DC466;
+            height: 10px;
+        }
+
+        .ui-state-default,
+        .ui-widget-content .ui-state-default {
+            width: 10px;
+            height: 27px;
+            background-color: #5DC466;
+            margin-top: -5px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <div class="loader_bg">
+        <div class="loader"></div>
+    </div> -->
+    <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
+        <div class="container">
+            <div class="flex-parent">
+                <div class="navbar-header1">
+
+                    <a class="navbar-brand header-logo" href="#home-page">
+                        <img src="../Images/LOGO.png" class="main-logo" alt="img">
+                    </a>
+                    <!-- <a class="ham-icon" href="#">
+                            <img src="../Images/menu.png" class="main-logo" alt="img">
+                            
+                        </a> -->
+                    <button class="header__button" id="btnNav" type="button">
+                        <i class="bi bi-list" style="font-size: 50px; color:black ;"></i>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="main-navbar"></div>
+
+                <div class="nav">
+                    <div class="nav__links">
+                        <i class="bi bi-x-lg" id="close-icon"></i>
+
+                        <a href="#home-page" class="nav__link" id="" rel="external">
+                            <img src="../Images/home 2.png" class="menu-icon" alt="img">
+                            <a href="#home-page" class="nav-href" rel="external">Home</a>
+                        </a>
+                        <hr class="hr-link">
+                        <a class="nav__link nav__link--active" href="#products" rel="external">
+                            <img src="../Images/dairy-products.png" class="menu-icon" alt="img">
+                            <a href="#products" class="nav-href" rel="external">Categories</a>
+                        </a>
+                        <hr class="hr-link">
+                        <a class="nav__link" href="#" rel="external">
+                            <img src="../Images/qr-code.png" class="menu-icon" alt="img">
+                            <a href="#" class="nav-href" rel="external">Scan QR</a>
+                        </a>
+                        <hr>
+                        <a class="nav__link" href="#leader-board" rel="external">
+                            <img src="../Images/ranking.png" class="menu-icon" alt="img">
+                            <a href="#leader-board" class="nav-href">Leadboard</a>
+                        </a>
+                        <hr class="hr-link">
+                        <a class="nav__link" href="#game-home-page" rel="external">
+                            <img src="../Images/memory.png" class="menu-icon" alt="img">
+                            <a href="#game-home-page" class="nav-href" rel="external">Game</a>
+                        </a>
+                        <hr class="hr-link">
+                        <a class="nav__link" href="#contact-us" rel="external">
+                            <img src="../Images/contact.png" class="menu-icon" alt="img">
+                            <a href="#contact-us" class="nav-href" rel="external">Contact Us</a>
+                        </a>
+                        <hr class="hr-link">
+                        <a class="nav__link" href="LandinPage.html" rel="external">
+                            <i class="bi bi-box-arrow-right" style="font-size: 60px; margin-right: 57px;"></i>
+                            <a href="LandinPage.html" style="margin-top: -10px;" class="nav-href" rel="external">Log
+                                Out</a>
+                        </a>
+                        <hr class="hr-link">
+                    </div>
+                    <div class="nav__overlay"></div>
+                </div>
+
+            </div>
+        </div>
+    </nav><!-- /#site-header -->
+
+
+    <div data-role="page" id="home-page">
+        <!-- <div class="loader_bg">
+            <div class="loader"></div>
+        </div> -->
+
+        <div data-role="main" class="ui-content">
+            <div class="container main-container">
+                <div class="welcome-section">
+                    <div class="wc-left">
+                        <div class="wc-heading">WELCOME</div>
+                        <div class="wc-name">Thomas Shubert</div>
+                    </div>
+                    <div class="wc-right">
+                        <div class="pro-icon">
+                            <img src="../Images/user 3.png">
+                        </div>
+                    </div>
+
+                    <div class="" id="search_area1">
+                        <img src="../Images/loupe 1.png" alt="search_img" class="search_icon">
+
+                        <input type="text" id="search_box2" placeholder="Search Grocery" />
+
+
+                    </div>
+                </div>
+                <section class="section-1">
+                    <div class="main-heading">
+                        <h2>Experience the New way of Shopping</h2>
+                    </div>
+
+                </section>
+                <section>
+                    <div style="margin-left: 90px;">
+                        <iframe id="player" type="text/html" width="950" height="390" src="../Video/video2.mp4"
+                            frameborder="0"></iframe>
+                    </div>
+                </section>
+
+                <section class="daily-deals">
+                    <div class="main-heading">
+                        <h2>Daily Deals</h2>
+                    </div>
+                    <div class="daily-deals-section">
+                        <div class="daily-product">
+                            <div class="dd-img">
+                                <a href="SingleProduct.html?prod_id=3">
+                                    <img src="../Images/Products/broccoli.png" alt="prod_img" class="dd_prod_img">
+                                </a>
+                                
+                            </div>
+                            <div class="dd-desc">
+                                <p class="dd-prod-name">Broccoli</p>
+                                <p class="dd-prod-cat">Vegetable</p>
+                                <p class="dd-prod-price">LKR 280.00</p>
+                            </div>
+                        </div>
+                        <div class="daily-product">
+                            <div class="dd-img">
+                                <a href="SingleProduct.html?prod_id=1">
+                                    <img src="../Images/Products/lemon.png" alt="prod_img" class="dd_prod_img">
+                                </a>
+                            </div>
+                            <div class="dd-desc">
+                                <p class="dd-prod-name">Lemon</p>
+                                <p class="dd-prod-cat">Fruit</p>
+                                <p class="dd-prod-price">LKR 50.00</p>
+                            </div>
+                        </div>
+                        <div class="daily-product">
+                            <div class="dd-img">
+                                <a href="SingleProduct.html?prod_id=1">
+                                    <img src="../Images/Products/chicken.png" alt="prod_img" class="dd_prod_img">
+                                </a>
+                            </div>
+                            <div class="dd-desc">
+                                <p class="dd-prod-name">Chicken</p>
+                                <p class="dd-prod-cat">Meat</p>
+                                <p class="dd-prod-price">LKR 320.00</p>
+                            </div>
+                        </div>
+
+                        <div class="daily-product">
+                            <div class="dd-img">
+                                <a href="SingleProduct.html?prod_id=2">
+                                    <img src="../Images/Products/carrot.png" alt="prod_img" class="dd_prod_img">
+                                </a>
+                                
+                            </div>
+                            <div class="dd-desc">
+                                <p class="dd-prod-name">Carrot</p>
+                                <p class="dd-prod-cat">Vegetable</p>
+                                <p class="dd-prod-price">LKR 120.00</p>
+                            </div>
+                        </div>
+                        <div class="daily-product">
+                            <div class="dd-img">
+                                <a href="SingleProduct.html?prod_id=5">
+                                    <img src="../Images/Products/pepsi.png" alt="prod_img" class="dd_prod_img">
+                                </a>
+                            </div>
+                            <div class="dd-desc">
+                                <p class="dd-prod-name">Pepsi</p>
+                                <p class="dd-prod-cat">Beverages</p>
+                                <p class="dd-prod-price">LKR 180.00</p>
+                            </div>
+                        </div>
+                        <div class="daily-product">
+                            <div class="dd-img">
+                                <a href="SingleProduct.html?prod_id=12">
+                                    <img src="../Images/Products/fries.png" alt="prod_img" class="dd_prod_img">
+                                </a>
+                            </div>
+                            <div class="dd-desc">
+                                <p class="dd-prod-name">Fries</p>
+                                <p class="dd-prod-cat">Frozen Foods</p>
+                                <p class="dd-prod-price">LKR 580.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-view-more">
+                        <a href="#products">Shop Now</a>
+                    </div>
+                </section>
+
+                <section class="section-2">
+                    <div class="main-heading">
+                        <h2>Shop by Categories</h2>
+                    </div>
+
+                    <div class="shop-categories">
+                        <div class="sc-wrap">
+
+                            <div id="sc-item1" class="sc-item">
+                                <a href="#products">
+                                    <img src="../Images/Products/lettuce.png">
+                                    <div class="sc-overlay" id="sc-overlay1"></div>
+                                    <div class="sc-heading">Vegetables</div>
+                                </a>
+                            </div>
+
+                            <div id="sc-item2" class="sc-item">
+                                <a href="#products">
+                                    <img src="../Images/Products/orange.png">
+                                    <div class="sc-overlay" id="sc-overlay2"></div>
+                                    <div class="sc-heading">Fruits</div>
+                                </a>
+                            </div>
+
+                            <div id="sc-item3" class=sc-section3>
+
+                                <div id="sc-item3-row1">
+                                    <div id="sc-item4" class="sc-item">
+                                        <a href="#products">
+                                            <img src="../Images/Products/chicken.png">
+                                            <div class="sc-overlay" id="sc-overlay3"></div>
+                                            <div class="sc-heading">Meat</div>
+                                        </a>
+                                    </div>
+
+                                    <div id="sc-item4" class="sc-item">
+                                        <a href="#products">
+                                            <img src="../Images/Products/pepsi.png">
+                                            <div class="sc-overlay" id="sc-overlay3"></div>
+                                            <div class="sc-heading">Beverages</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sc-item3" class=sc-section3>
+                                <div id="sc-item3-row2">
+                                    <div id="sc-item4" class="sc-item">
+                                        <a href="#products">
+                                            <img src="../Images/Products/fish.png">
+                                            <div class="sc-overlay" id="sc-overlay3"></div>
+                                            <div class="sc-heading">Fish</div>
+                                        </a>
+                                    </div>
+                                    <div id="sc-item4" class="sc-item">
+                                        <a href="#products">
+                                            <img src="../Images/Products/butter.png">
+                                            <div class="sc-overlay" id="sc-overlay3"></div>
+                                            <div class="sc-heading">Dairy</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-view-more">
+                            <a href="#products">View More</a>
+                        </div>
+                        <!-- <a href="#products">products</a> -->
+                    </div>
+
+                </section>
+
+                <section class="icon-banner">
+                    <div class="ib-wrap">
+                        <div class="ib-block">
+                            <div class="ib-icon"><img src="../Images/truck.png" alt="img"></div>
+                            <div class="ib-text-content">
+                                <div class="ibtc-heading">Free Shipping</div>
+                                <div class="ibtc-des">No additional payments for shipping</div>
+                            </div>
+                        </div>
+                        <div class="ib-block">
+                            <div class="ib-icon"><img src="../Images/clock.png" alt="img"></div>
+                            <div class="ib-text-content">
+                                <div class="ibtc-heading">Fast Deliverey</div>
+                                <div class="ibtc-des">Recieve your order on time</div>
+                            </div>
+                        </div>
+                        <div class="ib-block">
+                            <div class="ib-icon"><img src="../Images/secure.png" alt="img"></div>
+                            <div class="ib-text-content">
+                                <div class="ibtc-heading">Secured Payment</div>
+                                <div class="ibtc-des">Payment details are encrypted</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="ft-cta-banner">
+                    <div class="ftcb-wrap">
+                        <div class="ftcb-block">
+                            <h4 class="stc-sub-heading">Give Us a Call for</h4>
+                            <h1 class="stc-heading">Group & Custom Orders</h1>
+                            <div class="btn-view-more" id="contact-us-btn">
+                                <a href="#">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div data-role="footer">
+                <div id="footer-bottom">
+                    <div class="container">
+                        <div class="footer-b-wrap">
+                            <div class="ftb-left-col">
+                                <div class="ftbl-logo">
+                                    <a href="/">
+                                        <img src="../Images/logo-2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="ftbl-des">
+                                    <p>KEEPING IT SIMPLE, Foodsco objective is to “Keep It Simple” by<br>
+                                        providing quality and fresh products.</p>
+                                </div>
+
+                                <div class="social-icons">
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/FB.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="https://www.youtube.com/channel/UCMak_yiae3B82RkgC1SfKqw">
+                                            <img src="../Images/You tube.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/Twitter.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/Instagram.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ftb-right-col">
+
+                                <div class="ftbr-main-menu">
+                                    <div class="ftbr-heading">Important Links</div>
+                                    <ul id="menu-important-links-menu" class="foot-link-nav">
+                                        <li id="menu-item-318" class="menu-item">
+                                            <a title="My account" href="/">My Account</a>
+                                        </li>
+                                        <li id="menu-item-317" class="menu-item ">
+                                            <a title="Contact Us" href="/">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ftbr-main-menu">
+                                    <div class="ftbr-heading">Categories</div>
+                                    <ul id="menu-account-menu" class="foot-link-nav">
+                                        <li id="menu-item-76" class="menu-item">
+                                            <a title="Vegitables" href="/">Vegitables</a>
+                                        </li>
+                                        <li id="menu-item-77" class="menu-item">
+                                            <a title="Fruits" href="/">Fruits</a>
+                                        </li>
+                                        <li id="menu-item-78" class="menu-item">
+                                            <a title="Meats" href="/">Meats</a>
+                                        </li>
+                                        <li id="menu-item-79" class="menu-item">
+                                            <a title="Beverages" href="/">Beverages</a>
+                                        </li>
+                                        <li id="menu-item-80" class="menu-item">
+                                            <a title="Grocery" href="/">Grocery</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ftbr-contact">
+                                    <div class="ftbr-heading">Get in Touch</div>
+
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="bi bi-telephone-fill"></i>
+                                            </span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="tel:+94 71 08903455">+94 71 08903455</a>
+                                        </p>
+                                    </div>
+
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="bi bi-envelope-fill"></i>
+                                            </span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="mailto:medvouniforms@gmail.com">foodsco@gmail.com</a>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft-bottom">
+                        <div class="container">
+                            <div class="ft-bottom-row">
+                                <div class="ft-copyright">
+                                    <p class="copyright-note">Foodsco © 2021</p>
+                                </div>
+                                <div class="company-text">
+                                    Project by foodsco</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- ########################################## -->
+
+    <!-- Products Content -->
+
+    <!-- ########################################## -->
+    <div data-role="page" id="products">
+
+        <!-- <div class="loader_bg">
+            <div class="loader"></div>
+        </div> -->
+
+        <div role="main" class="ui-content">
+            <!--    Page content goes here.-->
+            <div class="container">
+                <div class='top-row'>
+                    <div class="pg-title">
+                        <h1>
+                            <div class='grey'>Explore</div>
+                            <div class=cat_title>Categories</div>
+                        </h1>
+                    </div>
+                    <div class="" id="search_area1">
+                        <img src="../Images/loupe 1.png" alt="search_img" class="search_icon">
+
+                        <input type="text" id="search_box1" placeholder="Search Grocery" />
+
+
+                    </div>
+                    <div class="">
+                        <button class="header__button" id="btn-filter" type="button">
+                            <img src="../Images/Filter.png" alt="filter_img" class="fillter_icon">
+                            <!-- <i class="bi bi-funnel-fill" style="font-size: 50px; color:#5DC466 ;"></i> -->
+                        </button>
+
+
+                    </div>
+                </div>
+                <div class="f-space">
+                    <div class='filter-space'>
+                        <i class="bi bi-x-lg" id="filter-close-icon"></i>
+
+                        <div class="filter-section">
+                            <div class="filter-price">
+                                <p>Price Range</p>
+                                <!-- <span id="range"></span><br><br> -->
+
+                                <div id="slider-range"></div>
+                                <div class="display-range">
+                                    <input class="range-input" type="text" id="low-range" readonly>
+                                    <input class="range-input" type="text" id="high-range" readonly>
+                                    <p id="low-range" readonly></p>
+                                </div>
+
+                            </div>
+
+                            <div class="sort">
+                                <p id="sort_A_Z">Sort Products A - Z <i class="bi bi-funnel"
+                                        style="font-size: 30px; color:#5DC466 ; cursor: pointer;"></i></p>
+                                <p id="sort_Z_A">Sort Products Z - A <i class="bi bi-funnel"
+                                        style="font-size: 30px; color:#5DC466 ; cursor: pointer;"></i></p>
+                            </div>
+
+                            <div class="fillter-btn">
+                                <div>
+                                    <button class="fil-btn" id="apply-btn" type="button">Apply</button>
+                                </div>
+                                <div>
+                                    <button class="fil-btn" id="cancel-btn" type="button">Cancel</button>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="filter__overlay"></div>
+
+                </div>
+
+
+            </div>
+            <div class="container category_section">
+
+                <div class='cat-row'>
+
+                    <div class="">
+                        <button class="cat_item" id="active" type="button" value="All">
+                            All
+                        </button>
+                    </div>
+                    <div class="" id="">
+                        <button class="cat_item" type="button" value="Vegetable">
+                            Vegetable
+                        </button>
+                    </div>
+                    <div class="" id="">
+                        <button class="cat_item" type="button" value="Fruit">
+                            Fruits
+                        </button>
+                    </div>
+                    <div class="" id="">
+                        <button class="cat_item" type="button" value="Meat">
+                            Meat
+                        </button>
+                    </div>
+                    <div class="c" id="">
+                        <button class="cat_item" type="button" value="Fish">
+                            Fish
+                        </button>
+                    </div>
+                    <div class="" id="">
+                        <button class="cat_item" type="button" value="Dairy">
+                            Dairy
+                        </button>
+                    </div>
+                    <div class="" id="">
+                        <button class="cat_item" type="button" value="Beverages">
+                            Beverages
+                        </button>
+                    </div>
+                    <div class="" id="">
+                        <button class="cat_item" type="button" value="Frozen Foods">
+                            Frozen Foods
+                        </button>
+                    </div>
+                    <div class="" id="">
+                        <button class="cat_item" type="button" value="Grocery">
+                            Grocery
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="container products_section" id="products_section">
+                <div class='products_row1' id="product_row"></div>
+
+            </div>
+
+            <div data-role="footer">
+                <div id="footer-bottom">
+                    <div class="container">
+                        <div class="footer-b-wrap">
+                            <div class="ftb-left-col">
+                                <div class="ftbl-logo">
+                                    <a href="/">
+                                        <img src="../Images/logo-2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="ftbl-des">
+                                    <p>KEEPING IT SIMPLE, Foodsco objective is to “Keep It Simple” by<br>
+                                        providing quality and fresh products.</p>
+                                </div>
+
+                                <div class="social-icons">
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/FB.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/You tube.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/Twitter.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/Instagram.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ftb-right-col">
+
+                                <div class="ftbr-main-menu">
+                                    <div class="ftbr-heading">Important Links</div>
+                                    <ul id="menu-important-links-menu" class="foot-link-nav">
+                                        <li id="menu-item-318" class="menu-item">
+                                            <a title="My account" href="/">My Account</a>
+                                        </li>
+                                        <li id="menu-item-317" class="menu-item ">
+                                            <a title="Contact Us" href="/">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ftbr-main-menu">
+                                    <div class="ftbr-heading">Categories</div>
+                                    <ul id="menu-account-menu" class="foot-link-nav">
+                                        <li id="menu-item-76" class="menu-item">
+                                            <a title="Vegitables" href="/">Vegitables</a>
+                                        </li>
+                                        <li id="menu-item-77" class="menu-item">
+                                            <a title="Fruits" href="/">Fruits</a>
+                                        </li>
+                                        <li id="menu-item-78" class="menu-item">
+                                            <a title="Meats" href="/">Meats</a>
+                                        </li>
+                                        <li id="menu-item-79" class="menu-item">
+                                            <a title="Beverages" href="/">Beverages</a>
+                                        </li>
+                                        <li id="menu-item-80" class="menu-item">
+                                            <a title="Grocery" href="/">Grocery</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ftbr-contact">
+                                    <div class="ftbr-heading">Get in Touch</div>
+
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="bi bi-telephone-fill"></i>
+                                            </span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="tel:+94 71 08903455">+94 71 08903455</a>
+                                        </p>
+                                    </div>
+
+                                    <div class="contact-group">
+                                        <h4 class="cg-heading">
+                                            <span class="cg-h-icon">
+                                                <i class="bi bi-envelope-fill"></i>
+                                            </span>
+                                        </h4>
+                                        <p class="cg-text">
+                                            <a href="mailto:medvouniforms@gmail.com">foodsco@gmail.com</a>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft-bottom">
+                        <div class="container">
+                            <div class="ft-bottom-row">
+                                <div class="ft-copyright">
+                                    <p class="copyright-note">Foodsco © 2021</p>
+                                </div>
+                                <div class="company-text">
+                                    Project by foodsco</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ########################################## -->
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>
+    <!-- ########################################## -->
+
+    <!-- Game home page -->
+    <div data-role="page" id="game-home-page">
+        <!-- <div class="loader_bg">
+            <div class="loader"></div>
+        </div> -->
+        <div role="main" class="ui-content">
+            <!--    Page content goes here.-->
+            <div id="game-main-page">
+                <div class="g-title">
+                    Flip and Win Offers from <br>FOODSCO
+
+                </div>
+                <div class="gm-btn-section">
+                    <div class="btn-play">
+                        <a href="#play-game">PLAY</a>
+                    </div>
+                    <div class="btn-board">
+                        <a href="#leader-board">Leader Board</a>
+                    </div>
+                    <div class="btn-how-play">
+                        <a href="#how-to-play">How to Play</a>
+                    </div>
+                </div>
+                <div class="gm-card-section">
+                    <div class="gm-card" id="gm-card1">
+                        <img src="../Images/Card 2.png" alt="img">
+                    </div>
+                    <div class="gm-card" id="gm-card2">
+                        <img src="../Images/Card 1.png" alt="img">
+                    </div>
+                    <div class="gm-card" id="gm-card3">
+                        <img src="../Images/Card 3.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to play page -->
+    <!-- ########################################## -->
+    <div data-role="page" id="how-to-play">
+        <!-- <div class="loader_bg">
+            <div class="loader"></div>
+        </div> -->
+        <div id="how-play-page">
+            <div class="bk-btn">
+                <a href="#game-home-page" id="home-page-link">
+                    <img src="../Images/Game/back-btn.png" alt="bk_img">
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- ########################################## -->
+    <!-- Game page -->
+    <!-- ########################################## -->
+    <div data-role="page" id="play-game">
+        <!-- <div class="loader_bg">
+            <div class="loader"></div>
+        </div> -->
+        <div role="main" class="ui-content">
+            <div class="game-overlay" id="game-overlay"></div>
+            <!--    Page content goes here.-->
+            <div id="game-play-page">
+                <div class="gp-head">
+                    <div class="bk-btn" id="bk-btn">
+                        <a href="#game-home-page" id="home-page-link">
+                            <img src="../Images/Game/back-btn.png" alt="bk_img">
+                        </a>
+
+                    </div>
+
+                    <div class="gp-title">
+                        <h3>Flip and Win</h3>
+                    </div>
+
+                </div>
+                <div class="cd-content">
+                    <div class="memory-card" data-id="discount_20">
+                        <img class="front-face" src="../Images/Game/c1.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_15">
+                        <img class="front-face" src="../Images/Game/c2.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_10">
+                        <img class="front-face" src="../Images/Game/c3.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_5">
+                        <img class="front-face" src="../Images/Game/c4.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_10">
+                        <img class="front-face" src="../Images/Game/c3.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_20">
+                        <img class="front-face" src="../Images/Game/c1.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_5">
+                        <img class="front-face" src="../Images/Game/c4.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_15">
+                        <img class="front-face" src="../Images/Game/c2.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_20">
+                        <img class="front-face" src="../Images/Game/c1.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_5">
+                        <img class="front-face" src="../Images/Game/c4.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_15">
+                        <img class="front-face" src="../Images/Game/c2.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+                    <div class="memory-card" data-id="discount_10">
+                        <img class="front-face" src="../Images/Game/c3.png" alt="card-1">
+                        <img class="back-face" src="../Images/Game/card-top.png" alt="logo-card">
+                    </div>
+
+                </div>
+                <div class="score-section">
+                    <div class="sc-title">
+                        Your Score
+                    </div>
+                    <div class="sc-points">
+                        <p class="score" id="score">0</p>
+                    </div>
+
+                    <div class="at-title">
+                        Attempts Left
+                    </div>
+                    <div class="sc-attempts">
+                        <p class="attempts" id="attempts">3</p>
+                    </div>
+
+                    <div class="btn-how-play" id="sc-how-to-play">
+                        <a href="#how-to-play">How to Play</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ########################################## -->
+    <!-- Leader Board page -->
+    <!-- ########################################## -->
+
+    <div data-role="page" id="leader-board">
+        <!-- <div class="loader_bg">
+            <div class="loader"></div>
+        </div> -->
+        <div role="main" class="ui-content">
+            <div id="leader-board-section">
+                <div class="bk-btn">
+                    <a href="#game-home-page" id="home-page-link">
+                        <img src="../Images/Game/back-btn.png" alt="bk_img">
+                    </a>
+
+                </div>
+
+                <div class="gp-title" id="lb-title">
+                    <h3>LeaderBoard</h3>
+                </div>
+
+                <div class="gp-points">
+                    <h3>Your Points : </h3>
+                </div>
+
+                <div class="lb-t-head">
+                    <div class="lb-place" id="lb-t-head">Rank</div>
+
+                    <div class="lb-name" id="lb-t-head">Name</div>
+
+                    <div class="lb-points" id="lb-t-head">Points</div>
+                </div>
+                <hr class="lb-t-head-bottom">
+
+                <div class="leader-content" id="leader-content"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ########################################## -->
+    <!-- Contact us page -->
+    <!-- ########################################## -->
+
+    <div data-role="page" id="contact-us">
+        <div class="loader_bg">
+            <div class="loader"></div>
+        </div>
+
+        <div data-role="main" class="ui-content">
+
+            <div class="submit-popup-overlay" id="submit-popup-overlay"></div>
+            <div class="show-popup" id="show-popup"></div>
+
+            <div class="container main-container">
+                <section class="section-2">
+                    <div class="contact-heading">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="Info">
+                        <div class="Info-wrap">
+                            <div class="Info-item">
+                                <div class="cont-section">
+                                    <div class="address">
+                                        <div class="Info-heading">
+                                            <h2>Address</h2><br><br>
+                                        </div>
+                                        <div class="Info-address">
+                                            <h2>Foodsco<br>14 Sir Baron Jayatilaka Mawatha, <br>Colombo<br>Sri Lanka
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="email-section">
+                                        <div class="email-address">
+                                            <div class="Info-heading">
+                                                <h2>Email Address</h2><br><br>
+                                            </div>
+                                            <div class="Info-address">
+                                                <h2>foodsco@gmail.com</h2>
+                                            </div>
+                                        </div>
+                                        <div class="Phone Number">
+                                            <div class="Info-heading">
+                                                <h2>Phone Number</h2><br><br>
+                                            </div>
+                                            <div class="Info-address">
+                                                <h2>+94 71 08903455</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="map-container">
+                                    <div class="Info-heading2">
+                                        <h2>Store Location</h2>
+                                    </div>
+                                    <!--Google map-->
+                                    <div id="map">
+                                        <img src="../Images/map 1.png" alt="img">
+                                    </div>
+
+                                    <!--Google Maps-->
+                                </div>
+                                <div class="feedback">
+
+                                    <div class="Info-heading3">
+                                        <h2>We Value Your Feedback</h2>
+                                    </div>
+
+                                    <input type="text" id="feedback" name="feedback">
+                                    <div class="wc-right">
+                                        <div class="get-started-btn">
+                                            <button class="purchase" onclick="feedbackSubmit()">Submit</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- ########################################## -->
+    <!--Navigation Content -->
+
+    <!-- ########################################## -->
+    <div class="footer-nav" data-position="fixed">
+        <div class="fn-wrap">
+            <div class="fn-item ">
+                <a href="#home-page" id="home-page-link" rel="external">
+                    <img src="../Images/home 1.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="#" rel="external">
+                    <img src="../Images/shopping-cart 1.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="#" rel="external">
+                    <img src="../Images/heart 1.png" alt="img">
+                </a>
+            </div>
+            <div class="fn-item">
+                <a href="#" rel="external">
+                    <img src="../Images/user 1.png" alt="img">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- ########################################## -->
+    <script>
+
+    </script>
+
+    <script src="../JS/Game.js"></script>
+    <script src="../JS/Main-JS.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script>
+        // Js for the loader
+
+        setTimeout(function () {
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+
+    </script>
+</body>
+
+</html>

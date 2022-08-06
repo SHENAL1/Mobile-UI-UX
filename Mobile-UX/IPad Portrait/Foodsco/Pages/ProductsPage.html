@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>FOODSCO </title>
+
+        <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+        <link rel="Stylesheet" href="../CSS/main-style.css"> <!--Link to connect the css file-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        
+        <!-- Bootstrap icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <!-- INCLUDING JQUERY-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        
+        <script src="../JS/Main-JS.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+        
+        <style>
+            .ui-slider-range{
+                border: 5px solid #5DC466;
+                background-color: #5DC466;
+                height: 10px;
+            }
+            .ui-slider-handle{
+                background-color: #5DC466;
+                height: 10px;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top navbar-default" id="site-header">
+            <div class="container">
+                <div class="flex-parent">
+                    <div class="navbar-header">
+    
+                        <a class="navbar-brand header-logo" href="#">
+                            <img src="../Images/LOGO.png" class="main-logo" alt="img">
+                        </a>
+                        <!-- <a class="ham-icon" href="#">
+                            <img src="../Images/menu.png" class="main-logo" alt="img">
+                            
+                        </a> -->
+                        <button class="header__button" id="btnNav" type="button">
+                            <i class="bi bi-list" style="font-size: 50px; color:black ;"></i>
+                        </button>
+                    </div>
+    
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                    
+                    </div>
+
+                    <nav class="nav">
+                        <div class="nav__links">
+                            <i class="bi bi-x-lg" id="close-icon" ></i>
+
+                            <a href="#" class="nav__link">
+                                <img src="../Images/home 2.png" class="menu-icon" alt="img">
+                                <a href="#" class="nav-href">Home</a>
+                            </a>
+                            <hr class="hr-link">
+                            <a class="nav__link nav__link--active" href="#">
+                                <img src="../Images/dairy-products.png" class="menu-icon" alt="img">
+                                <a href="#" class="nav-href">Categories</a>
+                            </a>
+                            <hr class="hr-link">
+                            <a class="nav__link" href="#">
+                                <img src="../Images/qr-code.png" class="menu-icon" alt="img">
+                                <a href="#" class="nav-href">Scan QR</a>
+                            </a>
+                            <hr>
+                            <a class="nav__link" href="#">
+                                <img src="../Images/ranking.png" class="menu-icon" alt="img">
+                                <a href="#" class="nav-href">Leadboard</a>
+                            </a>
+                            <hr class="hr-link">
+                            <a class="nav__link" href="#">
+                                <img src="../Images/memory.png" class="menu-icon" alt="img">
+                                <a href="#" class="nav-href">Game</a>
+                            </a>
+                            <hr class="hr-link">
+                            <a class="nav__link" href="#">
+                                <img src="../Images/contact.png" class="menu-icon" alt="img">
+                                <a href="#" class="nav-href">Contact Us</a>
+                            </a>
+                            <hr class="hr-link">
+                        </div>
+                        <div class="nav__overlay"></div>
+                    </nav>
+    
+                </div>
+            </div>
+        </nav><!-- /#site-header -->
+        <div data-role="page" id="home">
+            <div data-role="header" data-theme="a">
+                
+            </div>
+            
+            <div role="main" class="ui-content">
+                <!--    Page content goes here.-->
+                <div class="container">
+                    <div class='row'>
+                        <div class="col-sm-3">
+                            <h1>
+                                <div class='grey'>Explore</div>
+                                <div class=cat_title>Categories</div>
+                            </h1>
+                        </div>
+                        <div class="col-sm-8" id="search_area">
+                            <img src="../Images/loupe 1.png" alt="search_img" class="search_icon">
+
+                            <input type="text" id="search_box" placeholder="Search Grocery">
+                            <div class="search-extend"></div>    
+                        
+                        </div>
+                        <div class="col-sm-1">
+                            <button class="header__button" id="btn-filter" type="button">
+                                <img src="../Images/Filter.png" alt="filter_img" class="fillter_icon">
+                                <!-- <i class="bi bi-funnel-fill" style="font-size: 50px; color:#5DC466 ;"></i> -->
+                            </button>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="f-space">
+                        
+                        <div class="filter__overlay"></div>
+                        <div class='filter-space'>
+                            <i class="bi bi-x-lg" id="filter-close-icon" ></i>
+
+                            <div class="filter-section">
+                                <div class="filter-price">
+                                    <p>Price Range</p> 
+                                    <!-- <span id="range"></span><br><br> -->
+                                    
+                                    <div style="" id="slider-range"></div>
+                                    <div class="display-range">
+                                        <input type="text" id="low-range" readonly>
+                                        <input type="text" id="high-range" readonly>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="sort">
+                                    <p id="sort_A_Z">Sort Products A - Z <i class="bi bi-funnel" style="font-size: 30px; color:#5DC466 ;"></i></p>
+                                    <p  id="sort_Z_A">Sort Products Z - A <i class="bi bi-funnel" style="font-size: 30px; color:#5DC466 ;"></i></p>
+                                </div>
+                                
+                                <div class="fillter-btn">
+                                    <div>
+                                        <button class="fil-btn" id="apply-btn" type="button">Apply</button>
+                                    </div>
+                                    <div>
+                                        <button class="fil-btn" id="cancel-btn" type="button">Cancel</button>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="container category_section">
+                    <div class='row'>
+                        
+                        <div class="col-sm-2"  data-value='all'>
+                            <button class="cat_item" id="active" type="button" value="All">
+                                All
+                            </button>
+                        </div>
+                        <div class="col-sm-3 " id="" data-value='Vegetable'> 
+                            <button class="cat_item" type="button" value="Vegetable">
+                                Vegetable
+                            </button>
+                        </div> 
+                        <div class="col-sm-2" id="" data-value='Fruit'>
+                            <button class="cat_item" type="button" value="Fruit">
+                                Fruits
+                            </button>
+                        </div> 
+                        <div class="col-sm-2" id="" data-value='Meat'>
+                            <button class="cat_item" type="button" value="Meat">
+                                Meat
+                            </button>
+                        </div>    
+                        <div class="col-sm-2" id="" data-value='Fish'>
+                            <button class="cat_item" type="button" value="Fish">
+                                Fish
+                            </button>
+                        </div>    
+
+                    </div>
+                    <div class='row'>
+                        <div class="col-sm-2" id="" data-value='Dairy'>
+                            <button class="cat_item" type="button" value="Dairy">
+                                Dairy
+                            </button>
+                        </div> 
+                        <div class="col-sm-3" id="" data-value='Beverages'>
+                            <button class="cat_item" type="button" value="Beverages">
+                                Beverages
+                            </button>
+                        </div> 
+                        <div class="col-sm-4" id="" data-value='Frozen Foods'>
+                            <button class="cat_item" type="button" value="Frozen Foods">
+                                Frozen Foods
+                            </button>
+                        </div> 
+                        <div class="col-sm-2" id="" data-value='Grocery'>
+                            <button class="cat_item" type="button" value="Grocery">
+                                Grocery
+                            </button>
+                        </div>    
+                        
+
+                    </div>
+                </div>
+
+                <div class="container products_section" id="products_section">
+                    <div class='products_row1' id="product_row"></div>
+                    
+                </div>
+            </div>
+        
+
+            
+
+            <div data-role="footer" data-position="fixed">
+                
+                <div id="footer-bottom">
+                    <div class="container">
+                        <div class="footer-b-wrap">
+                            <div class="ftb-left-col">
+                                <div class="ftbl-logo">
+                                    <a href="/">
+                                        <img src="../Images/logo-2.png" alt="img">
+                                    </a>
+                                </div>
+                                <div class="ftbl-des">
+                                    <p>KEEPING IT SIMPLE, Foodsco objective is to “Keep It Simple” by<br> 
+                                        providing quality and fresh products.</p>
+                                </div>
+
+                                <div class="social-icons">
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/FB.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/You tube.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/Twitter.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="social-img">
+                                        <a href="#">
+                                            <img src="../Images/Instagram.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ftb-right-col">
+
+                                <div class="ftbr-main-menu">
+                                    <div class="ftbr-heading">Important Links</div>
+                                    <ul id="menu-important-links-menu" class="foot-link-nav">
+                                        <li id="menu-item-318" class="menu-item">
+                                            <a title="My account" href="/">My Account</a>
+                                        </li>
+                                        <li id="menu-item-317" class="menu-item ">
+                                            <a title="Contact Us" href="/">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ftbr-main-menu">
+                                    <div class="ftbr-heading">Categories</div>
+                                    <ul id="menu-account-menu" class="foot-link-nav">
+                                        <li id="menu-item-76" class="menu-item">
+                                            <a title="Vegitables" href="/">Vegitables</a>
+                                        </li>
+                                        <li id="menu-item-77" class="menu-item">
+                                            <a title="Fruits" href="/">Fruits</a>
+                                        </li>
+                                        <li id="menu-item-78" class="menu-item">
+                                            <a title="Meats" href="/">Meats</a>
+                                        </li>
+                                        <li id="menu-item-79" class="menu-item">
+                                            <a title="Beverages" href="/">Beverages</a>
+                                        </li>
+                                        <li id="menu-item-80" class="menu-item">
+                                            <a title="Grocery" href="/">Grocery</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="ftbr-contact">
+                                    <div class="ftbr-heading">Get in Touch</div>
+                                    
+                                        <div class="contact-group">
+                                            <h4 class="cg-heading">
+                                                <span class="cg-h-icon">
+                                                    <i class="bi bi-telephone-fill"></i>
+                                                </span>
+                                            </h4>
+                                            <p class="cg-text">
+                                                <a href="tel:+94 71 08903455">+94 71 08903455</a>
+                                            </p>
+                                        </div>
+
+                                        <div class="contact-group">
+                                            <h4 class="cg-heading">
+                                                <span class="cg-h-icon">
+                                                    <i class="bi bi-envelope-fill"></i>
+                                                </span>
+                                            </h4>
+                                            <p class="cg-text">
+                                                <a href="mailto:medvouniforms@gmail.com">foodsco@gmail.com</a>
+                                            </p>
+                                        </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft-bottom">
+                        <div class="container">
+                            <div class="ft-bottom-row">
+                                <div class="ft-copyright">
+                                    <p class="copyright-note">Foodsco © 2021</p>
+                                </div>
+                                <div class="company-text">
+                                Project by foodsco</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-nav">
+            <div class="fn-wrap">
+                <div class="fn-item ">
+                    <a href="#">
+                        <img src="../Images/home 1.png" alt="img">
+                    </a>
+                </div>
+                <div class="fn-item">
+                    <a href="#">
+                        <img src="../Images/shopping-cart 1.png" alt="img">
+                    </a>
+                </div>
+                <div class="fn-item">
+                    <a href="#">
+                        <img src="../Images/heart 1.png" alt="img">
+                    </a>
+                </div>
+                <div class="fn-item">
+                    <a href="#">
+                        <img src="../Images/user 1.png" alt="img">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="../JS/Main-JS.js"></script>
+        
+
+    </body>
+</html>

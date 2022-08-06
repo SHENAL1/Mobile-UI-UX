@@ -1,0 +1,152 @@
+.lemon{
+    width: 700px; 
+    height: 500px;
+    /* background-color: #fff; */
+    margin: 0 15px 15px 0;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 25px;
+    margin-left: 150px;
+    
+    /* padding: 5px; */
+    /* max-width: 1024px; */
+
+}
+.back-button{
+    margin-top: 170px;
+    width: 75px;
+    height: 75px;
+}
+.cart-button{
+    width: 200px;
+    margin-left: 600px;
+    margin-top: -50px;
+   
+}
+.ProductDescription{
+    width: 1000px;
+}
+.ProductType{
+    width: 100px;
+}
+.ProductTypeDes{
+    width: 300px;
+}
+.PriceContainer{
+    width: 500px;
+}
+
+.progress-label-left
+{
+    float: left;
+    margin-right: 0.5em;
+    line-height: 1em;
+}
+.progress-label-right
+{
+    float: right;
+    margin-left: 0.3em;
+    line-height: 1em;
+}
+.star-light
+{
+	color:#e9ecef;
+}
+.StarDisplay{
+    width: 600px;
+    margin-left: 700px;
+    margin-top: -130px;
+}
+.ProductName{
+    margin-top: 75px;
+}
+.ProductName h1{
+    margin-left: 30px;
+}
+.ProductType h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: -40px;
+    color: #7B837C;
+    
+}
+.ProductTypeDes h1{
+    font-size: 40px;
+    margin-left: 30px;
+}
+.ProductDescription h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #7B837C;
+    margin-left: 30px;
+    
+}
+
+.PriceContainer{
+    width: 900px;
+    height: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 0 0 5px rgba(0.25, 0.25, 0.25, 0.25);
+    border-radius: 60px;
+    margin-top: 50px;
+}
+.price h2{
+    text-align: justify;
+    margin-left: 30px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7B837C;
+}
+
+.price h1{
+    margin-left: 30px;
+    font-size: 75px;
+    font-weight: 500;
+    color: black;
+}
+
+.get-started-btn .purchase{
+    color: #fff;
+    background-color: #5DC466;
+    border-radius: 40px;
+    padding: 16px 100px;
+    font-weight: 400;
+    font-size: 15px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     width: 300px;
+     height: 75px;
+     margin-left: 600px;
+     float: right;
+    margin-top: -150px;
+    
+     margin-right: 50px;
+}
+.get-started-btn .rate{
+    color: #fff;
+    background-color: #5DC466;
+    border-radius: 40px;
+    padding: 16px 100px;
+    font-weight: 400;
+    font-size: 15px;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     width: 300px;
+     height: 75px;
+     
+    float: right;
+    margin-top: -80px;
+    
+    margin-right: 400px;
+}
+.Rating-topic h3{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.mt-5{
+    margin-left: 30px;
+}
+

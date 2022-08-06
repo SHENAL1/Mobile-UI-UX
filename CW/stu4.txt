@@ -1,0 +1,11 @@
+1. gamification to increase user motivation, engagement and 
+satisfaction and user notification (show points/scores gained)
+
+2. Gamification process
+
+3. Display the POI as list & integration a sorting (consider the use of thumbnail, title, description) 
+
+4. System feedback (auth messages)
+
+
+
